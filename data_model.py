@@ -17,7 +17,7 @@ def load_data(file):
 
 # Fungsi untuk Clustering dan visualisasi dendrogram
 def perform_clustering(x_train, n_clusters, linkage_method):
-    agglomerative_cluster = AgglomerativeClustering(n_clusters=n_clusters, affinity='euclidean', linkage=linkage_method)
+    agglomerative_cluster = AgglomerativeClustering(n_clusters=n_clusters, metric='euclidean', linkage=linkage_method)
     cluster_labels_train = agglomerative_cluster.fit_predict(x_train)
 
     silhouette_avg_train = silhouette_score(x_train, cluster_labels_train)
