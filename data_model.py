@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np 
 import streamlit as st
 import pickle 
-from sklearn.preprocessing import StandardScaler, Normalizer
-from sklearn.cluster import AgglomerativeClustering
-from sklearn.metrics import silhouette_score
-from sklearn.model_selection import train_test_split
+from scikit-learn.preprocessing import StandardScaler, Normalizer
+from scikit-learn.cluster import AgglomerativeClustering
+from scikit-learn.metrics import silhouette_score
+from scikit-learn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import dendrogram, linkage
 
